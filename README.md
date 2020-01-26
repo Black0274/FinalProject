@@ -1,2 +1,2 @@
 # FinalProject
-Final Project on CS253 Intellectual Systems. 
+Final project including neural network, AIML and CLIPS.
