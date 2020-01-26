@@ -1,0 +1,1017 @@
+﻿<aiml version="1.01" encoding="UTF-8">
+
+  <category>
+    <pattern>ПРИВЕТ</pattern>
+    <template>Здравствуй! Я астрологический бот. Скажи мне свой знак зодиака и я открою тебе будущее! Еще могу показать твою совместимость с другими знаками.</template>
+  </category>
+
+  <category>
+    <pattern>ЗДАРОВА</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>Я *</pattern>
+    <template>
+      <srai>
+        <star/>
+      </srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>БУДУЩЕЕ</pattern>
+    <template>Сначала скажи кто ты.</template>
+  </category>
+
+  <category>
+    <pattern>МОЕ БУДУЩЕЕ</pattern>
+    <template>
+      <srai>БУДУЩЕЕ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ПРОГНОЗ</pattern>
+    <template>
+      <srai>БУДУЩЕЕ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ПРЕДСКАЗАНИЕ</pattern>
+    <template>
+      <srai>БУДУЩЕЕ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ПАРА</pattern>
+    <template>Скажи мне кто ты и я скажу кто тебе подходит.</template>
+  </category>
+
+  <category>
+    <pattern>ПАРУ</pattern>
+    <template>
+      <srai>ПАРА</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>СОВМЕСТИМОСТЬ</pattern>
+    <template>
+      <srai>ПАРА</srai>
+    </template>
+  </category>
+
+
+
+  <category>
+    <pattern>ОВЕН</pattern>
+    <template>
+      Вам очень повезло родиться овном ♈! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">овен</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ОВЕН">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> У тебя будет счастливое безоблачное будущее. Счастье, богатство, слава. Будет все!</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template> Вы отлично поладите с другим овном, близнецами и львом. </template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ОВЕН</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>ТЕЛЕЦ</pattern>
+    <template>
+      Вам очень повезло родиться тельцом ♉ ! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">телец</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ТЕЛЕЦ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> У тебя будет счастливое безоблачное будущее. Счастье, богатство, слава. Будет все!</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template> Вы отлично поладите с овном, раком, девой, стрельцом и козерогом. </template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ТЕЛЕЦ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+  <category>
+    <pattern>БЛИЗНЕЦЫ</pattern>
+    <template>
+      Вам очень повезло родиться близнецами ♊ ! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">близнецы</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="БЛИЗНЕЦЫ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> У тебя будет счастливое безоблачное будущее. Счастье, богатство, слава. Будет все!</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с другими близнецами, раком, весами, стрельцом, козерогом и водолеем.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ БЛИЗНЕЦЫ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>РАК</pattern>
+    <template>
+      Вам очень повезло родиться раком ♋! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">рак</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="РАК">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> Звезды молчат об этом. Твое будущее туманно. Сожалею.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с тельцом, другим раком, девой, весами, скорпионом и рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ РАК</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+  
+
+  <category>
+    <pattern>ЛЕВ</pattern>
+    <template>
+      Вам очень повезло родиться львом ♌! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">лев</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ЛЕВ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> Звезды говорят что у тебя будет пять детей.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с овном, другим львом, девой, стрельцом, козерогом и водолеем.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ЛЕВ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>ДЕВА</pattern>
+    <template>
+      Вам очень повезло родиться девой ♍! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">дева</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ДЕВА">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> Звезды говорят что жизнь твоя будет яркой и праздной!</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с тельцом, раком, львом, дрогой девой, козерогом и рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ДЕВА</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>ВЕСЫ</pattern>
+    <template>
+      Вам очень повезло родиться весами ♎! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">весы</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ВЕСЫ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> Жизнь твоя будет спокойной, неспешной и наполненной простыми мирскими радостями.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с овном, тельцом, львом, другими весами, скорпионом и стрельцом.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ВЕСЫ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>СКОРПИОН</pattern>
+    <template>
+      Вам очень повезло родиться скорпионом ♏! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">скорпион</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="СКОРПИОН">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template> Жизнь твоя будет тяжелой... Но преодолеть можно любую трудость.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с овном, раком, львом, другим скорпионом, стрельцом, рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ СКОРПИОН</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>СТРЕЛЕЦ</pattern>
+    <template>
+      Вам очень повезло родиться стрельцом ♐! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">стрелец</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="СТРЕЛЕЦ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template>В принципе, все будет не так уж плохо, но с деньгами придется туго.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с овном, тельцом, львом, скорпионом, другим стрельцом, водолеем.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ СТРЕЛЕЦ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>КОЗЕРОГ</pattern>
+    <template>
+      Вам очень повезло родиться козерогом ♑! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">козерог</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="КОЗЕРОГ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template>Вы будете притягивать к себе людей как магнит. Но будте осторожны. Люди будут притягиваться как хорошие, так и плохие.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с тельцом, близнецами, львом, девой, другим козерогом и рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ КОЗЕРОГ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>ВОДОЛЕЙ</pattern>
+    <template>
+      Вам очень повезло родиться водолеем ♒! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">водолей</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="ВОДОЛЕЙ">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template>Нормальная у тебя будет жизнь, но ничего особенного не жди.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с овном, близнецами, весами, стрельцом, другим водолеем, рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ ВОДОЛЕЙ</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+
+  <category>
+    <pattern>РЫБА</pattern>
+    <template>
+      Вам очень повезло родиться рыбой ♓! Это самый лучший знак зодиака!
+      <think>
+        <set name="topic">рыба</set>
+      </think>
+    </template>
+  </category>
+
+  <topic name="РЫБА">
+    <category>
+      <pattern>ХОЧУ *</pattern>
+      <template>
+        <srai>
+          <star/>
+        </srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>БУДУЩЕЕ</pattern>
+      <template>Все будет замечательно, но нужно быть осторожным в выборе друзей.</template>
+    </category>
+
+    <category>
+      <pattern>МОЕ БУДУЩЕЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРОГНОЗ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПРЕДСКАЗАНИЕ</pattern>
+      <template>
+        <srai>БУДУЩЕЕ</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>ПАРА</pattern>
+      <template>Вы отлично поладите с тельцом, близнецами, девой, скорпионом, стрельцой и другой рыбой.</template>
+    </category>
+
+    <category>
+      <pattern>ПАРУ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>СОВМЕСТИМОСТЬ</pattern>
+      <template>
+        <srai>ПАРА</srai>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Я НЕ РЫБА</pattern>
+      <template>
+        Ошибаются все :)
+        <think>
+          <set name="topic">старт</set>
+        </think>
+      </template>
+    </category>
+  </topic>
+
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>Не понял. Это точно про звезды?</li>
+        <li>Не, такого не знаю.</li>
+        <li>Звезды ничего не говорят мне об этом.</li>
+      </random>
+    </template>
+  </category>
+</aiml>
